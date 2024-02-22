@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Router } from "react-router-dom";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import About from "./pages/about"
 import Contact from "./pages/contact"
 import Gallery from "./pages/gallery";
@@ -13,14 +13,16 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-      <Navbar />
-      <About />
-      <Contact />
-      <Gallery />
-      <Home />
-      <NotFound />
-      <Plans />
-      <Trainers />
+        <Navbar />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="plans" element={<Plans />} />
+          <Route path="trainers" element={<Trainers />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </BrowserRouter>
     </div>
   )

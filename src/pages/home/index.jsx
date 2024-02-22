@@ -1,8 +1,13 @@
+import MainHeader from '../../components/Header/MainHeader'
+import Programs from '../../components/Programs'
 import './home.css'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <MainHeader />
+      <Programs />
+    </>
   )
 }
 
