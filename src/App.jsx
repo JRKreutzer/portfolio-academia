@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/about"
 import Contact from "./pages/contact"
 import Gallery from "./pages/gallery";
@@ -7,6 +7,7 @@ import NotFound from "./pages/notFound";
 import Plans from "./pages/plans";
 import Trainers from "./pages/trainers";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="trainers" element={<Trainers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )
