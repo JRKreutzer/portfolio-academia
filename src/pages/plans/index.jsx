@@ -1,8 +1,8 @@
 import HeaderImage from '../../images/header_bg_4.jpg'
 import { plans } from '../../data'
 import Header from '../../components/Header'
+import Plan from '../../components/Plan';
 import './plans.css'
-import Card from './../../UI/Card';
 
 const Plans = () => {
   return (
@@ -14,18 +14,13 @@ const Plans = () => {
         <div className="container plans__container">
           {
             plans.map(({id, name, desc, price, features}) => {
-              return <Card key={id} className='plan'>
-                <h3>{name}</h3>
-                <small>{desc}</small>
-                <h1>{`R$${price}`}</h1><h2>/mês</h2>
-                <h4>Benefícios</h4>
-                {
-                  features.map(({feature, available}, index) => {
-                    return <p key={index} className={!available ? 'disabled' : ''}>{feature}</p>
-                  })
-                }
-                <button className='btn lg'>Escolher Plano</button>
-              </Card>
+              return <Plan 
+                key={id} 
+                name={name} 
+                desc={desc} 
+                price={price} 
+                features={features} 
+              />
             })
           }
         </div>

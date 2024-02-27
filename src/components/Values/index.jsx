@@ -18,7 +18,7 @@ const Values = () => {
 
         </div>
         <div className="values__right">
-          <SectionHead icon={<IoDiamond/>} title="Values" />
+          <SectionHead icon={<IoDiamond/>} title="Valores" />
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, assumenda! Voluptas, ducimus sapiente! Vitae, voluptate.
           </p>

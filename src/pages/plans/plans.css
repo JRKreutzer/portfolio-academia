@@ -9,17 +9,19 @@
 }
 
 .plan small {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .plan h1 {
     color: var(--color-primary-variant);
     display: inline;
+    font-size: 2.5rem;
 }
 
 .plan h2 {
-    display: inline;
     color: var(--color-gray-400);
+    display: inline;
+    font-size: 1.5rem;
 }
 
 .plan h4 {
@@ -41,7 +43,7 @@
 }
 
 /* MEDIA QUERIES (Telas média) */
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1024px) {
     .plans__container {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;

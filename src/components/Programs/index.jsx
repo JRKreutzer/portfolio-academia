@@ -10,7 +10,7 @@ const Programs = () => {
     <section className="programs">
 
       <div className="container programs__container">
-        <SectionHead icon={<IoDiamond />} title="Programs" />
+        <SectionHead icon={<IoDiamond />} title="Programas" />
         <div className="programs__wrapper">
           {
             programs.map(({id, icon, title, info, path}) => {
@@ -19,7 +19,7 @@ const Programs = () => {
                   <span>{icon}</span>
                   <h4>{title}</h4>
                   <small>{info}</small>
-                  <Link to={path} className="btn sm">Learn More <AiFillCaretRight/></Link>
+                  <Link to={path} className="btn sm">Saiba Mais <AiFillCaretRight/></Link>
                 </Card>
               )
             })
